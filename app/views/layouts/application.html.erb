@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Diabmate</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link rel="icon" type="image/png" href="/assets/diabmate_logo_navbar.png">
+
+    <!-- Google result text-->
+    <title>Diabetes Management Web Application Diabmate | Type 2 Diabetes | Type 1 Diabetes </title>
+
+    <!-- Google result description-->
+    <meta name="description" content="Diabmate is a web application helping patients managing type 2 diabetes and type 1 diabetes. With Diabmate, they can easily explain what is diabetes to their relatives, analyze their blood sugar level, follow their diabetic diet and plan their daily activities.">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-03PW1EPQH2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-03PW1EPQH2');
+    </script>
+
+    <!-- Facebook -->
+    <meta property="og:title" content="Diabmate - Your web app to manage diabetes">
+    <meta property="og:image" content="open-graph-image-diabmate.jpg">
+    <meta property="og:description" content="Diabmate is a web application helping patients managing type 2 diabetes and type 1 diabetes. With Diabmate, they can easily explain what is diabetes to their relatives, analyze their blood sugar level, follow their diabetic diet and plan their daily activities.">
+    <meta property="og:site_name" content="Diabmate"/>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Hotjar Tracking Code for www.diabmate.com -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2594364,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
